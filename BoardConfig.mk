@@ -189,3 +189,5 @@ SHRP_OTG := /usb_otg
 SHRP_FLASH := 1
 SHRP_NOTCH := true
 SHRP_DARK := true
+# SHRP Express, enables on-the-fly theme patching
+SHRP_EXPRESS := true
