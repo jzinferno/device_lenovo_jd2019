@@ -145,12 +145,9 @@ TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_MAX_BRIGHTNESS := 4095
 TW_DEFAULT_BRIGHTNESS := 1950
 TW_SCREEN_BLANK_ON_BOOT := true
-TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_SUPERSU := true
 TW_HAS_EDL_MODE := true
 TW_USE_TOOLBOX := true
-TW_Y_OFFSET := 83
-TW_H_OFFSET := -83
 
 # Screen
 TARGET_SCREEN_WIDTH := 1080
@@ -166,9 +163,13 @@ TW_INCLUDE_FUSE_NTFS := true
 LZMA_RAMDISK_TARGETS := recovery
 LZMA_COMPRESSION := -9
 
-# TWRP Device version
-TW_DEVICE_VERSION := jd2019 by jzinferno
-
 # TWRP Debug Flags
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# PBRP specific build flags
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
+
+# Torch
+PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
