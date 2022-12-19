@@ -10,6 +10,7 @@ DEVICE_PATH := device/lenovo/jd2019
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
+BUILD_BROKEN_DUP_RULES := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -173,6 +174,3 @@ TARGET_USES_LOGD := true
 # PBRP specific build flags
 PB_DISABLE_DEFAULT_DM_VERITY := true
 PB_DISABLE_DEFAULT_TREBLE_COMP := true
-
-# Torch
-PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
