@@ -5,6 +5,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Release name
+PRODUCT_RELEASE_NAME := L78071
+
 # Inherit from common AOSP config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
@@ -20,5 +23,5 @@ $(call inherit-product, device/lenovo/jd2019/device.mk)
 PRODUCT_DEVICE := jd2019
 PRODUCT_NAME := twrp_jd2019
 PRODUCT_BRAND := Lenovo
-PRODUCT_MODEL := Lenovo L78071
+PRODUCT_MODEL := Z5s
 PRODUCT_MANUFACTURER := lenovo
