@@ -129,6 +129,9 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 RECOVERY_SDCARD_ON_DATA := true
 
+# Fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
+
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 
