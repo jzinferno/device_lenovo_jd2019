@@ -1,4 +1,4 @@
-# TWRP device tree for Lenovo Z5s (L78071)
+# SHRP device tree for Lenovo Z5s (L78071)
 
 ## Device specifications
 Basic   | Spec Sheet
