@@ -173,9 +173,19 @@ LZMA_COMPRESSION := -9
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
-# Torch
-PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
+##############
+# SHRP flags #
+##############
 
-# PBRP specific build flags
-PB_DISABLE_DEFAULT_DM_VERITY := true
-PB_DISABLE_DEFAULT_TREBLE_COMP := true
+SHRP_DEVICE_CODE := jd2019
+SHRP_PATH := device/lenovo/$(SHRP_DEVICE_CODE)
+SHRP_MAINTAINER := jzinferno
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A/B
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_EDL_MODE := 1
+SHRP_EXTERNAL := /external_sd
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_NOTCH := true
+SHRP_DARK := true
